@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <video id="memories-video" autoplay muted loop playsinline>
+        <source src="https://res.cloudinary.com/dwnbxuywe/video/upload/q_auto,f_auto/v1770047301/our_memories_itdkew.mp4" type="video/mp4">
+    </video>
+    
+    <video id="bg-video" class="hidden" playsinline preload="auto" >
+        <source src="https://res.cloudinary.com/dwnbxuywe/video/upload/q_auto,f_auto/v1770048895/love_story_mobile_jnqdqd.mp4" type="video/mp4" media="(max-width: 768px)">
+        <source src="love_story.mp4" type="video/mp4">
+    </video>
+
+
+    <audio id="bg-music">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div id="question-screen">
+            <h1 class="header_text">♥ Shanthini ♥<br>Will you be my Valentine? 💖</h1>
+            <p class="sub_text">"Every moment with you feels like a dream come true..."</p>
+            
+            <div class="buttons">
+                <button id="yes-btn">Yes!</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+
+        <div id="success-screen" class="hidden">
+            <h1 class="header_text">♥ Yay! 🎉 ♥<br>I knew you'd say yes!</h1>
+            <div class="img-container">
+                <img src="romantic.png" alt="Happy Couple" id="celebration-img">
+            </div>
+            <p class="sub_text">You've made me the happiest!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
